@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Parallel-Bridge のアイコン。
+  参考フォルダのアイコンと同じ作り: 濃紺のライン画 + 右下にずらした一色のパステル面。
+  アクセント色はシリーズ未使用のティール (#8ED2C6)。
+    参考1 グリーン       #A5D5A6
+    参考2 ブルー         #8FC8E8
+    参考3 ペリウィンクル #9FA8DA
+    Nextcloud Quick Share アンバー #F2C57C
+    ピンク               #E49DA6
+  モチーフは共有フォルダ + 右向き矢印（ブラウザから共有フォルダへ橋渡しする）。
+-->
+<!-- viewBox は図柄の外接矩形（線幅とパステル面のずれ込み）に合わせて詰めてある。
+     16px でも潰れないよう余白を最小限にするため。 -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="10 14 87 87">
+  <defs>
+    <path id="pb-folder"
+          d="M14 36
+             A10 10 0 0 1 24 26
+             H40
+             L49 37
+             H76
+             A10 10 0 0 1 86 47
+             V72
+             A10 10 0 0 1 76 82
+             H24
+             A10 10 0 0 1 14 72
+             Z" />
+  </defs>
+
+  <!-- 右下へずらしたパステル面（ライン画の内側からのぞく） -->
+  <use href="#pb-folder" x="7" y="8" fill="#8ED2C6" />
+
+  <!-- ライン画 -->
+  <g fill="none" stroke="#18193F" stroke-width="8"
+     stroke-linecap="round" stroke-linejoin="round">
+    <use href="#pb-folder" />
+    <path d="M33 49 V59 H65" />
+    <path d="M55 49 L65 59 L55 69" />
+  </g>
+</svg>

@@ -1,0 +1,130 @@
+---
+# Cayman テーマの配色を、アプリアイコンの色に合わせて上書きする。
+#   濃紺 #18193F（ライン画）/ ティール #8ED2C6（パステル面）
+---
+
+// --- アイコン由来のパレット ---------------------------------------------
+$pb-navy:        #18193F; // アイコンのライン画
+$pb-navy-light:  #2B2D6B; // 濃紺の明るい側（グラデーション用）
+$pb-teal:        #8ED2C6; // アイコンのパステル面
+$pb-teal-deep:   #147A6C; // 白背景でも読めるティール（リンク・見出し）
+$pb-teal-tint:   #F1F9F7; // ごく薄いティール（コード背景など）
+$pb-teal-border: #D3E9E4; // 罫線用の薄いティール
+
+// --- Cayman の変数を上書き -----------------------------------------------
+$header-bg-color:           $pb-navy;
+$header-bg-color-secondary: $pb-navy-light;
+$header-heading-color:      #FFFFFF;
+$section-headings-color:    $pb-navy;
+$body-link-color:           $pb-teal-deep;
+$body-text-color:           #3F4A52;
+$blockquote-text-color:     #6B7B80;
+$code-bg-color:             $pb-teal-tint;
+$code-text-color:           #2B5A53;
+$border-color:              $pb-teal-border;
+$table-border-color:        $pb-teal-border;
+$hr-border-color:           $pb-teal-border;
+
+@import "{{ site.theme }}";
+
+// --- 追加の調整 -----------------------------------------------------------
+
+// ヘッダーのグラデーションに、アイコンのティールをほんの少し混ぜる。
+.page-header {
+  background-color: $pb-navy;
+  background-image: linear-gradient(120deg, $pb-teal-deep 0%, $pb-navy-light 45%, $pb-navy 100%);
+}
+
+// ヘッダーのタイトルの上にアプリアイコンを出す。
+// アイコンのライン画は濃紺なので、白いタイルに載せて濃紺の背景から浮かせる。
+.project-name::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 1.25rem;
+  padding: 10px;
+  border-radius: 22px;
+  background: #FFFFFF url("{{ '/assets/img/icon.svg' | relative_url }}") center / 72px 72px no-repeat;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 42em) {
+  .project-name::before {
+    width: 72px;
+    height: 72px;
+    border-radius: 16px;
+    background-size: 54px 54px;
+  }
+}
+
+// タイトル下のリード文は、アイコンのパステル面と同じティールで。
+.project-tagline {
+  color: $pb-teal;
+  opacity: 1;
+}
+
+// ボタンはティールの縁取りで、ホバーでティール面に反転。
+.btn {
+  border-color: rgba($pb-teal, 0.6);
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+
+  &:hover,
+  &:focus {
+    background-color: $pb-teal;
+    border-color: $pb-teal;
+    color: $pb-navy;
+  }
+}
+
+.main-content {
+  // 見出しの下に細いティールの罫線を入れて、章の切れ目を分かりやすくする。
+  h2 {
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid $pb-teal-border;
+  }
+
+  h3 {
+    color: $pb-teal-deep;
+  }
+
+  a:hover {
+    color: $pb-navy;
+  }
+
+  // 引用は左端をティールに。
+  blockquote {
+    border-left-color: $pb-teal;
+  }
+
+  // 表の見出し行に薄いティールを敷く。
+  table th {
+    background-color: $pb-teal-tint;
+    color: $pb-navy;
+  }
+
+  table tr:nth-child(even) td {
+    background-color: rgba($pb-teal-tint, 0.6);
+  }
+
+  code {
+    border: 1px solid $pb-teal-border;
+  }
+
+  pre {
+    border: 1px solid $pb-teal-border;
+
+    > code {
+      border: 0;
+    }
+  }
+}
+
+.site-footer {
+  border-top-color: $pb-teal-border;
+}
+
+.site-footer-owner {
+  color: $pb-navy;
+}
