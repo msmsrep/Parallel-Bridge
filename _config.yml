@@ -1,0 +1,10 @@
+title: Parallel-Bridge
+description: 社内サイトに書かれた共有フォルダのパスを、クリックひとつでエクスプローラーに開く
+theme: jekyll-theme-cayman
+baseurl: /Parallel-Bridge
+url: https://msmsrep.github.io
+lang: ja
+
+# 公開するのはユーザー向けガイドとプライバシーポリシーだけ
+exclude:
+  - README.md
