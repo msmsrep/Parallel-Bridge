@@ -81,7 +81,6 @@ Toolbar icon → "Open options".
 | Also link paths in page text | Turns plain `\server\share` text into links too (off by default). Paths with spaces are recognized when wrapped in quotes or 「」 |
 | When you click a link | See the table above |
 | Mark converted links | Makes converted links easy to spot |
-| Check connection to the app | Verifies that the extension can reach the Windows app |
 
 ### App settings
 
@@ -98,7 +97,7 @@ Launch Parallel-Bridge-LocalLink from the Start menu to open its settings window
 
 ### Nothing happens when I click a link
 
-- Check that the Windows app is installed — use "Check connection to the app" in the extension options.
+- Check that the Windows app is installed (look for Parallel-Bridge-LocalLink in the Start menu).
 - You may have blocked the Edge confirmation earlier. Review the site's permissions
   from the icon at the left of the address bar.
 
