@@ -1,5 +1,5 @@
 ---
-title: Parallel-Bridge User Guide
+title: Parallel-Bridge-LocalLink User Guide
 description: Open file-share paths written on intranet pages in File Explorer with one click
 lang: en
 ---
@@ -7,7 +7,7 @@ lang: en
 [日本語]({{ '/' | relative_url }}) · [Privacy Policy]({{ '/en/privacy-policy' | relative_url }})
 
 Your intranet wiki says `\fileserver\share\report.xlsx`, but your browser refuses to open it.
-**Parallel-Bridge** makes those paths clickable: one click opens them in File Explorer.
+**Parallel-Bridge-LocalLink** makes those paths clickable: one click opens them in File Explorer.
 
 - Everything stays between your PC and your own file server.
 - No history, no logs, no ads, no analytics, no telemetry.
@@ -19,7 +19,7 @@ Your intranet wiki says `\fileserver\share\report.xlsx`, but your browser refuse
 |---|---|
 | OS | Windows 10 version 2004 or later, or Windows 11 (64-bit) |
 | Browser | Microsoft Edge |
-| Parts | Both the Windows app **Parallel-Bridge** and the Edge extension **Parallel-Bridge for Edge** |
+| Parts | Both the Windows app **Parallel-Bridge-LocalLink** and the Edge extension **Parallel-Bridge for Edge** |
 
 The app alone can open `pbridge://` links, but you need the extension to use it on ordinary intranet pages.
 
@@ -27,7 +27,7 @@ The app alone can open `pbridge://` links, but you need the extension to use it 
 
 ### Windows app
 
-Install "Parallel-Bridge" from the Microsoft Store (coming soon).
+Install "Parallel-Bridge-LocalLink" from the Microsoft Store (coming soon).
 
 Windows then associates `pbridge://` links with the app. No extra setup is needed.
 
@@ -41,7 +41,7 @@ The extension is **disabled on every site by default**.
 It reads page content only on sites you have enabled.
 
 1. Open an intranet page that contains share paths
-2. Click the Parallel-Bridge toolbar icon
+2. Click the "Parallel-Bridge for Edge" toolbar icon
 3. Choose **"Enable on this site"**
 4. Grant the site access when Edge asks
 
@@ -50,9 +50,9 @@ To stop, choose "Disable on this site" from the same icon.
 
 ## 3. Click a link
 
-1. **Edge asks first** — Windows/Edge shows a confirmation for opening Parallel-Bridge.
+1. **Edge asks first** — Windows/Edge shows a confirmation for opening Parallel-Bridge-LocalLink.
    "Always allow" applies **per site**, so other sites will ask again.
-2. **Parallel-Bridge asks next** — it shows the **full path** it is about to open and the
+2. **Parallel-Bridge-LocalLink asks next** — it shows the **full path** it is about to open and the
    origin the link claims to come from. Check it, then press "Open".
 3. File Explorer opens with the item selected.
 
@@ -85,7 +85,7 @@ Toolbar icon → "Open options".
 
 ### App settings
 
-Launch Parallel-Bridge from the Start menu to open its settings window.
+Launch Parallel-Bridge-LocalLink from the Start menu to open its settings window.
 
 | Setting | What it does |
 |---|---|
@@ -111,7 +111,7 @@ Launch Parallel-Bridge from the Start menu to open its settings window.
 
 ### "This server isn't on the allow list"
 
-For safety, Parallel-Bridge only reaches servers on your **local network**.
+For safety, Parallel-Bridge-LocalLink only reaches servers on your **local network**.
 Links pointing to servers on the internet are not opened.
 
 ### "This path wasn't found" / "Couldn't reach the server"

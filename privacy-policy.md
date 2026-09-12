@@ -1,21 +1,21 @@
 ---
 title: プライバシーポリシー
-description: Parallel-Bridge のプライバシーポリシー
+description: Parallel-Bridge-LocalLink のプライバシーポリシー
 lang: ja
 ---
 
 [English]({{ '/en/privacy-policy' | relative_url }}) ・ [ユーザーガイド]({{ '/' | relative_url }})
 
-対象: Windows アプリ「Parallel-Bridge」および Edge 拡張機能「Parallel-Bridge for Edge」
+対象: Windows アプリ「Parallel-Bridge-LocalLink」および Edge 拡張機能「Parallel-Bridge for Edge」
 
 最終更新日: 2026-09-12
 
 ## 概要
 
-Parallel-Bridge は、社内ネットワーク (LAN) 上の Web ページに書かれた共有フォルダのパス
+Parallel-Bridge-LocalLink は、社内ネットワーク (LAN) 上の Web ページに書かれた共有フォルダのパス
 (`\\server\share\...` 形式の UNC パス) を、クリックひとつでエクスプローラーに開くためのソフトウェアです。
 
-**Parallel-Bridge は、あなたの情報を開発者やその他の第三者のサーバーに送信しません。**
+**Parallel-Bridge-LocalLink は、あなたの情報を開発者やその他の第三者のサーバーに送信しません。**
 広告、アクセス解析、利用状況の収集 (テレメトリ) は一切行いません。
 すべての処理はあなたのパソコンの中で完結します。
 
@@ -74,7 +74,7 @@ Windows の仕組み上、このキーはアプリをアンインストールし
 共有フォルダへのリンクや、共有フォルダのパスらしき文字列を探します。
 有効にしていないサイトでは、ページの内容に一切アクセスしません。
 
-見つけたパスは、あなたがクリックしたときに、**あなたのパソコン上の Parallel-Bridge アプリにだけ**渡されます。
+見つけたパスは、あなたがクリックしたときに、**あなたのパソコン上の Parallel-Bridge-LocalLink アプリにだけ**渡されます。
 外部のサーバーには送信しません。
 
 ### 保存する情報
@@ -96,15 +96,15 @@ Windows の仕組み上、このキーはアプリをアンインストールし
 | ストレージ | 上記の設定を保存するため |
 | スクリプトの実行、アクティブなタブ | 有効にしたサイトでのみ、リンクを変換する処理を動かすため |
 | サイトへのアクセス (任意) | サイトごとに、あなたが「有効にする」を押したときだけ許可を求めます |
-| ネイティブメッセージング | パソコン上の Parallel-Bridge アプリと通信するため |
+| ネイティブメッセージング | パソコン上の Parallel-Bridge-LocalLink アプリと通信するため |
 
 ## 第三者への提供
 
-Parallel-Bridge は、あなたの情報を第三者に販売・提供・共有しません。
+Parallel-Bridge-LocalLink は、あなたの情報を第三者に販売・提供・共有しません。
 
 ## 子どものプライバシー
 
-Parallel-Bridge は、年齢を問わず個人情報を収集しません。
+Parallel-Bridge-LocalLink は、年齢を問わず個人情報を収集しません。
 
 ## このポリシーの変更
 

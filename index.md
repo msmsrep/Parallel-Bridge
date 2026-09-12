@@ -1,5 +1,5 @@
 ---
-title: Parallel-Bridge ユーザーガイド
+title: Parallel-Bridge-LocalLink ユーザーガイド
 description: 社内サイトに書かれた共有フォルダのパスを、クリックひとつでエクスプローラーに開く
 lang: ja
 ---
@@ -8,7 +8,7 @@ lang: ja
 
 社内のグループウェアや Wiki に `\fileserver\共有\資料.xlsx` のようなパスが書いてあっても、
 ブラウザはセキュリティ上の理由でそれを開けません。
-**Parallel-Bridge** は、そのパスをクリックひとつでエクスプローラーに開けるようにします。
+**Parallel-Bridge-LocalLink** は、そのパスをクリックひとつでエクスプローラーに開けるようにします。
 
 - 通信はすべてあなたのパソコンと社内のファイルサーバーの間だけで完結します。
 - 開いたフォルダの履歴やログは残しません。広告・アクセス解析・テレメトリもありません。
@@ -20,7 +20,7 @@ lang: ja
 |---|---|
 | OS | Windows 10 バージョン 2004 以降、または Windows 11 (64 ビット) |
 | ブラウザ | Microsoft Edge |
-| 構成 | Windows アプリ **Parallel-Bridge** と Edge 拡張機能 **Parallel-Bridge for Edge** の両方 |
+| 構成 | Windows アプリ **Parallel-Bridge-LocalLink** と Edge 拡張機能 **Parallel-Bridge for Edge** の両方 |
 
 アプリだけでも `pbridge://` のリンクは開けますが、
 ふつうの社内ページで使うには拡張機能も必要です。
@@ -29,7 +29,7 @@ lang: ja
 
 ### Windows アプリ
 
-Microsoft Store から「Parallel-Bridge」をインストールします（公開準備中）。
+Microsoft Store から「Parallel-Bridge-LocalLink」をインストールします（公開準備中）。
 
 インストールすると、Windows が `pbridge://` リンクをこのアプリに結び付けます。
 特別な設定は要りません。
@@ -44,7 +44,7 @@ Edge アドオンストアから「Parallel-Bridge for Edge」を追加します
 あなたが許可したサイトでだけページを読みます。
 
 1. 共有フォルダのパスが書かれた社内ページを開く
-2. ツールバーの Parallel-Bridge アイコンをクリック
+2. ツールバーの「Parallel-Bridge for Edge」アイコンをクリック
 3. **「このサイトで有効にする」** を押す
 4. Edge が「このサイトへのアクセスを許可しますか」と聞くので許可する
 
@@ -55,9 +55,9 @@ Edge アドオンストアから「Parallel-Bridge for Edge」を追加します
 
 リンクをクリックすると、次の順で進みます。
 
-1. **Edge の確認** — 「Parallel-Bridge を開きますか？」という Windows / Edge の確認が出ます。
+1. **Edge の確認** — 「Parallel-Bridge-LocalLink を開きますか？」という Windows / Edge の確認が出ます。
    「常に許可」はサイト単位で効きます（別のサイトでは改めて確認が出ます）。
-2. **Parallel-Bridge の確認** — 開こうとしている**パスの全文**と、
+2. **Parallel-Bridge-LocalLink の確認** — 開こうとしている**パスの全文**と、
    リンクが名乗っている送信元が表示されます。内容を確かめて「開く」を押してください。
 3. エクスプローラーが開き、対象のファイルが選択された状態になります。
 
@@ -90,7 +90,7 @@ Edge アドオンストアから「Parallel-Bridge for Edge」を追加します
 
 ### アプリの設定
 
-スタートメニューから Parallel-Bridge を起動すると設定画面が開きます。
+スタートメニューから Parallel-Bridge-LocalLink を起動すると設定画面が開きます。
 
 | 項目 | 説明 |
 |---|---|
@@ -117,7 +117,7 @@ Edge アドオンストアから「Parallel-Bridge for Edge」を追加します
 
 ### 「このサーバーは許可リストにありません」と出る
 
-安全のため、Parallel-Bridge は**社内ネットワーク (LAN) 内のサーバー**にしかアクセスしません。
+安全のため、Parallel-Bridge-LocalLink は**社内ネットワーク (LAN) 内のサーバー**にしかアクセスしません。
 インターネット上のサーバーを指すリンクは開けません。
 
 ### 「このパスは見つかりませんでした」「サーバーに接続できませんでした」と出る

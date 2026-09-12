@@ -1,21 +1,21 @@
 ---
 title: Privacy Policy
-description: Privacy policy for Parallel-Bridge
+description: Privacy policy for Parallel-Bridge-LocalLink
 lang: en
 ---
 
 [日本語]({{ '/privacy-policy' | relative_url }}) · [User Guide]({{ '/en/' | relative_url }})
 
-Applies to: the Windows app "Parallel-Bridge" and the Edge extension "Parallel-Bridge for Edge"
+Applies to: the Windows app "Parallel-Bridge-LocalLink" and the Edge extension "Parallel-Bridge for Edge"
 
 Last updated: 2026-09-12
 
 ## Summary
 
-Parallel-Bridge opens file-share paths (UNC paths of the form `\server\share\...`) written on
+Parallel-Bridge-LocalLink opens file-share paths (UNC paths of the form `\server\share\...`) written on
 pages on your local network in File Explorer with a single click.
 
-**Parallel-Bridge does not send your information to the developer or to any third party.**
+**Parallel-Bridge-LocalLink does not send your information to the developer or to any third party.**
 There are no ads, no analytics, and no usage tracking (telemetry).
 Everything happens on your own PC.
 
@@ -74,7 +74,7 @@ The extension reads page content **only on sites you have enabled**, to find sha
 text that looks like a share path.
 On sites you have not enabled, it does not access page content at all.
 
-Paths it finds are handed **only to the Parallel-Bridge app on your own PC** when you click them.
+Paths it finds are handed **only to the Parallel-Bridge-LocalLink app on your own PC** when you click them.
 They are never sent to an external server.
 
 ### What is stored
@@ -95,15 +95,15 @@ That sync is a feature of Microsoft Edge and follows the browser vendor's policy
 | Storage | To save the settings above |
 | Scripting, active tab | To run the link conversion, only on sites you enabled |
 | Site access (optional) | Requested per site, only when you press "Enable on this site" |
-| Native messaging | To communicate with the Parallel-Bridge app on your PC |
+| Native messaging | To communicate with the Parallel-Bridge-LocalLink app on your PC |
 
 ## Third parties
 
-Parallel-Bridge does not sell, provide, or share your information with third parties.
+Parallel-Bridge-LocalLink does not sell, provide, or share your information with third parties.
 
 ## Children's privacy
 
-Parallel-Bridge does not collect personal information from anyone, regardless of age.
+Parallel-Bridge-LocalLink does not collect personal information from anyone, regardless of age.
 
 ## Changes to this policy
 
