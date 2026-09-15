@@ -27,13 +27,13 @@ The app alone can open `pbridge://` links, but you need the extension to use it 
 
 ### Windows app
 
-Install "Parallel-Bridge-LocalLink" from the Microsoft Store (coming soon).
+Install [Parallel-Bridge-LocalLink](https://apps.microsoft.com/detail/9MZS24SFBKR9) from the Microsoft Store.
 
 Windows then associates `pbridge://` links with the app. No extra setup is needed.
 
 ### Edge extension
 
-Add "Parallel-Bridge for Edge" from the Edge Add-ons store (coming soon).
+Add [Parallel-Bridge for Edge](https://microsoftedge.microsoft.com/addons/detail/parallelbridge-for-edge/dmidfkmnkkedmhecpoamhlfmdjacciob) from the Edge Add-ons store.
 
 ## 2. Enable it on the sites you use
 

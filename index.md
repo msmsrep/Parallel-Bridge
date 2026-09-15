@@ -29,14 +29,14 @@ lang: ja
 
 ### Windows アプリ
 
-Microsoft Store から「Parallel-Bridge-LocalLink」をインストールします（公開準備中）。
+Microsoft Store から [Parallel-Bridge-LocalLink](https://apps.microsoft.com/detail/9MZS24SFBKR9) をインストールします。
 
 インストールすると、Windows が `pbridge://` リンクをこのアプリに結び付けます。
 特別な設定は要りません。
 
 ### Edge 拡張機能
 
-Edge アドオンストアから「Parallel-Bridge for Edge」を追加します（公開準備中）。
+Edge アドオンストアから [Parallel-Bridge for Edge](https://microsoftedge.microsoft.com/addons/detail/parallelbridge-for-edge/dmidfkmnkkedmhecpoamhlfmdjacciob) を追加します。
 
 ## 2. 使いたいサイトで有効にする
 
