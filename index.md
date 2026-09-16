@@ -2,6 +2,7 @@
 title: Parallel-Bridge-LocalLink ユーザーガイド
 description: 社内サイトに書かれた共有フォルダのパスを、クリックひとつでエクスプローラーに開く
 lang: ja
+store_links: true
 ---
 
 [English]({{ '/en/' | relative_url }}) ・ [プライバシーポリシー]({{ '/privacy-policy' | relative_url }})
@@ -9,6 +10,11 @@ lang: ja
 社内のグループウェアや Wiki に `\fileserver\共有\資料.xlsx` のようなパスが書いてあっても、
 ブラウザはセキュリティ上の理由でそれを開けません。
 **Parallel-Bridge-LocalLink** は、そのパスをクリックひとつでエクスプローラーに開けるようにします。
+
+<figure class="shot">
+  <img src="{{ '/assets/img/guide/ja/page-links.png' | relative_url }}" alt="社内ページの共有パスがリンクに変わった様子" loading="lazy">
+  <figcaption>有効にしたサイトでは、共有パスがリンクになります</figcaption>
+</figure>
 
 - 通信はすべてあなたのパソコンと社内のファイルサーバーの間だけで完結します。
 - 開いたフォルダの履歴やログは残しません。広告・アクセス解析・テレメトリもありません。
@@ -26,6 +32,8 @@ lang: ja
 ふつうの社内ページで使うには拡張機能も必要です。
 
 ## 1. インストールする
+
+ページ上部のボタン、または下のリンクから 2 つともインストールします。
 
 ### Windows アプリ
 
@@ -48,6 +56,10 @@ Edge アドオンストアから [Parallel-Bridge for Edge](https://microsoftedg
 3. **「このサイトで有効にする」** を押す
 4. Edge が「このサイトへのアクセスを許可しますか」と聞くので許可する
 
+<figure class="shot">
+  <img src="{{ '/assets/img/guide/ja/popup-enable.png' | relative_url }}" alt="ツールバーのアイコンから「このサイトで有効にする」を押す画面" loading="lazy">
+</figure>
+
 これで、そのサイトのパスがリンクに変わります。
 やめたいときは同じアイコンから「このサイトで無効にする」を押します。
 
@@ -60,6 +72,11 @@ Edge アドオンストアから [Parallel-Bridge for Edge](https://microsoftedg
 2. **Parallel-Bridge-LocalLink の確認** — 開こうとしている**パスの全文**と、
    リンクが名乗っている送信元が表示されます。内容を確かめて「開く」を押してください。
 3. エクスプローラーが開き、対象のファイルが選択された状態になります。
+
+<figure class="shot">
+  <img src="{{ '/assets/img/guide/ja/app-confirm.png' | relative_url }}" alt="リンクをクリックすると、開くパスの全文を示す確認画面が出る" loading="lazy">
+  <figcaption>Parallel-Bridge-LocalLink の確認画面</figcaption>
+</figure>
 
 同じ共有 (`\サーバー\共有` 単位) をこれから何度も使うなら、
 確認画面の **「この共有を常に許可」** を押すと次回から確認が省かれます。
@@ -74,11 +91,19 @@ Edge アドオンストアから [Parallel-Bridge for Edge](https://microsoftedg
 
 既定の動作は拡張機能のオプション「クリックしたときの動作」で変えられます。
 
+<figure class="shot">
+  <img src="{{ '/assets/img/guide/ja/click-action.png' | relative_url }}" alt="拡張機能のオプション「クリックしたときの動作」" loading="lazy">
+</figure>
+
 ## 4. 設定
 
 ### 拡張機能のオプション
 
 ツールバーのアイコン →「オプションを開く」。
+
+<figure class="shot">
+  <img src="{{ '/assets/img/guide/ja/ext-options.png' | relative_url }}" alt="拡張機能のオプション画面" loading="lazy">
+</figure>
 
 | 項目 | 説明 |
 |---|---|
@@ -97,6 +122,15 @@ Edge アドオンストアから [Parallel-Bridge for Edge](https://microsoftedg
 | 動作テスト | UNC パスを入力して、開けるかどうかをその場で確かめられます |
 | 言語 | 日本語 / 英語 / Windows の設定に合わせる（次の起動から反映） |
 | 設定フォルダを開く | 設定ファイルの保存先を開きます |
+
+<figure class="shot">
+  <img src="{{ '/assets/img/guide/ja/app-settings.png' | relative_url }}" alt="アプリの設定画面 (確認なしで開ける共有と言語)" loading="lazy">
+</figure>
+
+<figure class="shot">
+  <img src="{{ '/assets/img/guide/ja/app-test.png' | relative_url }}" alt="アプリの設定画面の動作テスト" loading="lazy">
+  <figcaption>「動作テスト」で UNC パスが受理されるか確かめられます</figcaption>
+</figure>
 
 ## 5. 困ったとき
 
@@ -119,6 +153,10 @@ Edge アドオンストアから [Parallel-Bridge for Edge](https://microsoftedg
 安全のため、Parallel-Bridge-LocalLink は**社内ネットワーク (LAN) 内のサーバー**にしかアクセスしません。
 インターネット上のサーバーを指すリンクは開けません。
 
+<figure class="shot">
+  <img src="{{ '/assets/img/guide/ja/app-blocked.png' | relative_url }}" alt="「実行ファイルは直接開きません」「このリンクは開けません」の画面" loading="lazy">
+</figure>
+
 ### 「このパスは見つかりませんでした」「サーバーに接続できませんでした」と出る
 
 パスの綴りを確認してください。
@@ -137,4 +175,4 @@ Edge の仕様です。「常に許可」は**サイト単位**で効くので�
 
 ## お問い合わせ
 
-不具合の報告や要望は [GitHub の Issues](https://github.com/msmsrep/Parallel-Bridge/issues) までお願いします。
+<small>不具合の報告や要望は [GitHub の Issues](https://github.com/msmsrep/Parallel-Bridge/issues) まで。</small>

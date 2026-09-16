@@ -128,3 +128,97 @@ $hr-border-color:           $pb-teal-border;
 .site-footer-owner {
   color: $pb-navy;
 }
+
+// --- 入手ボタン (ヘッダー) -----------------------------------------------
+// アプリと拡張機能の入手先を、ページで一番目立つ場所に並べる。
+.store-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.store-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  min-width: 17rem;
+  padding: 0.85rem 1.4rem 0.85rem 1rem;
+  border-radius: 14px;
+  background: #FFFFFF;
+  color: $pb-navy;
+  text-align: left;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  transition: transform 0.15s, box-shadow 0.15s;
+
+  &:hover,
+  &:focus {
+    color: $pb-navy;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
+  }
+
+  small {
+    display: block;
+    color: $pb-teal-deep;
+    font-size: 0.8rem;
+  }
+
+  strong {
+    display: block;
+    font-size: 1.1rem;
+  }
+}
+
+.store-btn-step {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background: $pb-teal;
+  color: $pb-navy;
+  font-weight: 700;
+}
+
+.store-note {
+  margin: 0.9rem 0 0;
+  color: rgba(#FFFFFF, 0.8);
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 42em) {
+  .store-btn {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+// --- ガイドのスクリーンショット -------------------------------------------
+.main-content .shot {
+  margin: 1rem 0 1.5rem;
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid $pb-teal-border;
+    border-radius: 12px;
+  }
+
+  figcaption {
+    margin-top: 0.4rem;
+    color: $blockquote-text-color;
+    font-size: 0.85rem;
+  }
+}
+
+// GitHub へのリンクは控えめに。
+.site-footer-owner {
+  font-size: 0.85rem;
+}

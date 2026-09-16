@@ -2,12 +2,18 @@
 title: Parallel-Bridge-LocalLink User Guide
 description: Open file-share paths written on intranet pages in File Explorer with one click
 lang: en
+store_links: true
 ---
 
 [日本語]({{ '/' | relative_url }}) · [Privacy Policy]({{ '/en/privacy-policy' | relative_url }})
 
 Your intranet wiki says `\fileserver\share\report.xlsx`, but your browser refuses to open it.
 **Parallel-Bridge-LocalLink** makes those paths clickable: one click opens them in File Explorer.
+
+<figure class="shot">
+  <img src="{{ '/assets/img/guide/en/page-links.png' | relative_url }}" alt="Share paths on an intranet page turned into links" loading="lazy">
+  <figcaption>On sites you enable, share paths become links</figcaption>
+</figure>
 
 - Everything stays between your PC and your own file server.
 - No history, no logs, no ads, no analytics, no telemetry.
@@ -24,6 +30,8 @@ Your intranet wiki says `\fileserver\share\report.xlsx`, but your browser refuse
 The app alone can open `pbridge://` links, but you need the extension to use it on ordinary intranet pages.
 
 ## 1. Install
+
+Install both, using the buttons at the top of the page or the links below.
 
 ### Windows app
 
@@ -45,6 +53,10 @@ It reads page content only on sites you have enabled.
 3. Choose **"Enable on this site"**
 4. Grant the site access when Edge asks
 
+<figure class="shot">
+  <img src="{{ '/assets/img/guide/en/popup-enable.png' | relative_url }}" alt="Choosing "Enable on this site" from the toolbar icon" loading="lazy">
+</figure>
+
 Share paths on that site now become links.
 To stop, choose "Disable on this site" from the same icon.
 
@@ -55,6 +67,11 @@ To stop, choose "Disable on this site" from the same icon.
 2. **Parallel-Bridge-LocalLink asks next** — it shows the **full path** it is about to open and the
    origin the link claims to come from. Check it, then press "Open".
 3. File Explorer opens with the item selected.
+
+<figure class="shot">
+  <img src="{{ '/assets/img/guide/en/app-confirm.png' | relative_url }}" alt="Clicking a link shows a confirmation with the full path" loading="lazy">
+  <figcaption>The Parallel-Bridge-LocalLink confirmation</figcaption>
+</figure>
 
 If you will use the same share (`\server\share`) often, press **"Always allow this share"**
 in the confirmation dialog to skip it next time.
@@ -69,11 +86,19 @@ in the confirmation dialog to skip it next time.
 
 You can change the default under "When you click a link" in the extension options.
 
+<figure class="shot">
+  <img src="{{ '/assets/img/guide/en/click-action.png' | relative_url }}" alt="The "When you click a link" extension option" loading="lazy">
+</figure>
+
 ## 4. Settings
 
 ### Extension options
 
 Toolbar icon → "Open options".
+
+<figure class="shot">
+  <img src="{{ '/assets/img/guide/en/ext-options.png' | relative_url }}" alt="The extension options page" loading="lazy">
+</figure>
 
 | Setting | What it does |
 |---|---|
@@ -92,6 +117,15 @@ Launch Parallel-Bridge-LocalLink from the Start menu to open its settings window
 | Try it | Enter a UNC path to see how it is validated and opened |
 | Language | English / Japanese / Use Windows setting (takes effect on next start) |
 | Open settings folder | Opens where the settings file is stored |
+
+<figure class="shot">
+  <img src="{{ '/assets/img/guide/en/app-settings.png' | relative_url }}" alt="App settings: shares that open without asking, and language" loading="lazy">
+</figure>
+
+<figure class="shot">
+  <img src="{{ '/assets/img/guide/en/app-test.png' | relative_url }}" alt="The "Try it" section of the app settings" loading="lazy">
+  <figcaption>"Try it" shows whether a UNC path is accepted</figcaption>
+</figure>
 
 ## 5. Troubleshooting
 
@@ -113,6 +147,10 @@ Launch Parallel-Bridge-LocalLink from the Start menu to open its settings window
 For safety, Parallel-Bridge-LocalLink only reaches servers on your **local network**.
 Links pointing to servers on the internet are not opened.
 
+<figure class="shot">
+  <img src="{{ '/assets/img/guide/en/app-blocked.png' | relative_url }}" alt=""Programs aren't opened directly" and "This link can't be opened" dialogs" loading="lazy">
+</figure>
+
 ### "This path wasn't found" / "Couldn't reach the server"
 
 Check the spelling of the path. If you are about to connect to the VPN, or the file is
@@ -129,4 +167,4 @@ That is how Edge behaves. "Always allow" applies **per site**, so a different si
 
 ## Contact
 
-Please report bugs and requests on [GitHub Issues](https://github.com/msmsrep/Parallel-Bridge/issues).
+<small>Bugs and requests: [GitHub Issues](https://github.com/msmsrep/Parallel-Bridge/issues).</small>

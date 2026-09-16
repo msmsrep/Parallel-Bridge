@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "ja" }}">
+  <head>
+    <meta charset="UTF-8">
+{% seo %}
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% include head-custom.html %}
+  </head>
+  <body>
+    {% assign en = false %}{% if page.lang == "en" %}{% assign en = true %}{% endif %}
+    <a id="skip-to-content" href="#content">{% if en %}Skip to the content.{% else %}本文へ移動{% endif %}</a>
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name">{{ page.title | default: site.title }}</h1>
+      <h2 class="project-tagline">{{ page.description | default: site.description }}</h2>
+
+      {% if page.store_links %}
+      {% comment %} 入手先はヘッダーで一番目立たせる。アプリと拡張の両方が要るので 2 つ並べる {% endcomment %}
+      <div class="store-links">
+        <a class="store-btn" href="https://apps.microsoft.com/detail/9MZS24SFBKR9">
+          <span class="store-btn-step">1</span>
+          <span class="store-btn-text">
+            <small>{% if en %}Windows app · Microsoft Store{% else %}Windows アプリ ・ Microsoft Store{% endif %}</small>
+            <strong>Parallel-Bridge-LocalLink</strong>
+          </span>
+        </a>
+        <a class="store-btn" href="https://microsoftedge.microsoft.com/addons/detail/parallelbridge-for-edge/dmidfkmnkkedmhecpoamhlfmdjacciob">
+          <span class="store-btn-step">2</span>
+          <span class="store-btn-text">
+            <small>{% if en %}Edge extension · Edge Add-ons{% else %}Edge 拡張機能 ・ Edge アドオン{% endif %}</small>
+            <strong>Parallel-Bridge for Edge</strong>
+          </span>
+        </a>
+      </div>
+      <p class="store-note">{% if en %}Install both to use it.{% else %}両方インストールすると使えます。{% endif %}</p>
+      {% endif %}
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      {{ content }}
+
+      <footer class="site-footer">
+        <span class="site-footer-owner">
+          <a class="github-link" href="https://github.com/msmsrep/Parallel-Bridge">GitHub</a>
+          ·
+          <a href="https://github.com/msmsrep/Parallel-Bridge/issues">{% if en %}Report an issue{% else %}不具合の報告・要望{% endif %}</a>
+        </span>
+      </footer>
+    </main>
+  </body>
+</html>
