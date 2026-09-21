@@ -19,7 +19,7 @@
       <h2 class="project-tagline">{{ page.description | default: site.description }}</h2>
 
       {% if page.store_links %}
-      {% comment %} 入手先はヘッダーで一番目立たせる。アプリと拡張の両方が要るので 2 つ並べる {% endcomment %}
+      {% comment %} 入手先はヘッダーで一番目立たせる。アプリと拡張の両方が要る。拡張は Edge 版と Chrome 版のどちらか一方 {% endcomment %}
       <div class="store-links">
         <a class="store-btn" href="https://apps.microsoft.com/detail/9MZS24SFBKR9">
           <span class="store-btn-step">1</span>
@@ -28,15 +28,25 @@
             <strong>Parallel-Bridge-LocalLink</strong>
           </span>
         </a>
-        <a class="store-btn" href="https://microsoftedge.microsoft.com/addons/detail/parallelbridge-for-edge/dmidfkmnkkedmhecpoamhlfmdjacciob">
-          <span class="store-btn-step">2</span>
-          <span class="store-btn-text">
-            <small>{% if en %}Edge extension · Edge Add-ons{% else %}Edge 拡張機能 ・ Edge アドオン{% endif %}</small>
-            <strong>Parallel-Bridge for Edge</strong>
-          </span>
-        </a>
+        <div class="store-choice">
+          <a class="store-btn" href="https://microsoftedge.microsoft.com/addons/detail/parallelbridge-for-edge/dmidfkmnkkedmhecpoamhlfmdjacciob">
+            <span class="store-btn-step">2</span>
+            <span class="store-btn-text">
+              <small>{% if en %}Edge extension · Edge Add-ons{% else %}Edge 拡張機能 ・ Edge アドオン{% endif %}</small>
+              <strong>Parallel-Bridge for Edge</strong>
+            </span>
+          </a>
+          <span class="store-or">{% if en %}or{% else %}または{% endif %}</span>
+          <a class="store-btn" href="https://chromewebstore.google.com/detail/jkpdfjipibgfpeehjgmcjpahmpfipkfl">
+            <span class="store-btn-step">2</span>
+            <span class="store-btn-text">
+              <small>{% if en %}Chrome extension · Chrome Web Store{% else %}Chrome 拡張機能 ・ Chrome ウェブストア{% endif %}</small>
+              <strong>Parallel-Bridge for Chrome</strong>
+            </span>
+          </a>
+        </div>
       </div>
-      <p class="store-note">{% if en %}Install both to use it.{% else %}両方インストールすると使えます。{% endif %}</p>
+      <p class="store-note">{% if en %}Install the app and the extension for your browser.{% else %}アプリと、お使いのブラウザー用の拡張機能をインストールすると使えます。{% endif %}</p>
       {% endif %}
     </header>
 

@@ -6,9 +6,9 @@ lang: en
 
 [日本語]({{ '/privacy-policy' | relative_url }}) · [User Guide]({{ '/en/' | relative_url }})
 
-Applies to: the Windows app "Parallel-Bridge-LocalLink" and the Edge extension "Parallel-Bridge for Edge"
+Applies to: the Windows app "Parallel-Bridge-LocalLink", the Edge extension "Parallel-Bridge for Edge", and the Chrome extension "Parallel-Bridge for Chrome"
 
-Last updated: 2026-09-12
+Last updated: 2026-09-21
 
 ## Summary
 
@@ -86,7 +86,7 @@ They are never sent to an external server.
 | Click behavior, marking of converted links | Same |
 
 **If browser sync is turned on**, these settings sync to the other browsers you are signed in to.
-That sync is a feature of Microsoft Edge and follows the browser vendor's policy.
+That sync is a feature of Microsoft Edge / Google Chrome and follows the browser vendor's policy.
 
 ### Permissions used
 

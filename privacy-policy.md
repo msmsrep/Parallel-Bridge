@@ -6,9 +6,9 @@ lang: ja
 
 [English]({{ '/en/privacy-policy' | relative_url }}) ・ [ユーザーガイド]({{ '/' | relative_url }})
 
-対象: Windows アプリ「Parallel-Bridge-LocalLink」および Edge 拡張機能「Parallel-Bridge for Edge」
+対象: Windows アプリ「Parallel-Bridge-LocalLink」、Edge 拡張機能「Parallel-Bridge for Edge」および Chrome 拡張機能「Parallel-Bridge for Chrome」
 
-最終更新日: 2026-09-12
+最終更新日: 2026-09-21
 
 ## 概要
 
@@ -87,7 +87,7 @@ Windows の仕組み上、このキーはアプリをアンインストールし
 
 ブラウザの**同期機能を有効にしている場合**、これらの設定は、あなたがサインインしている
 ほかのパソコンのブラウザにも同期されます。
-この同期はブラウザ (Microsoft Edge) の機能として、ブラウザの提供元のポリシーに従って行われます。
+この同期はブラウザ (Microsoft Edge / Google Chrome) の機能として、ブラウザの提供元のポリシーに従って行われます。
 
 ### 使用する権限
 

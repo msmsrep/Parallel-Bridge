@@ -25,15 +25,16 @@ store_links: true
 | 項目 | 条件 |
 |---|---|
 | OS | Windows 10 バージョン 2004 以降、または Windows 11 (64 ビット) |
-| ブラウザ | Microsoft Edge |
-| 構成 | Windows アプリ **Parallel-Bridge-LocalLink** と Edge 拡張機能 **Parallel-Bridge for Edge** の両方 |
+| ブラウザ | Microsoft Edge または Google Chrome |
+| 構成 | Windows アプリ **Parallel-Bridge-LocalLink** と、お使いのブラウザー用の拡張機能 (Edge なら **Parallel-Bridge for Edge**、Chrome なら **Parallel-Bridge for Chrome**) |
 
 アプリだけでも `pbridge://` のリンクは開けますが、
 ふつうの社内ページで使うには拡張機能も必要です。
 
 ## 1. インストールする
 
-ページ上部のボタン、または下のリンクから 2 つともインストールします。
+ページ上部のボタン、または下のリンクから、アプリと拡張機能をインストールします。
+拡張機能は、お使いのブラウザーに合わせてどちらか一方を入れてください (中身は同じです)。
 
 ### Windows アプリ
 
@@ -46,15 +47,22 @@ Microsoft Store から [Parallel-Bridge-LocalLink](https://apps.microsoft.com/de
 
 Edge アドオンストアから [Parallel-Bridge for Edge](https://microsoftedge.microsoft.com/addons/detail/parallelbridge-for-edge/dmidfkmnkkedmhecpoamhlfmdjacciob) を追加します。
 
+### Chrome 拡張機能
+
+Chrome ウェブストアから [Parallel-Bridge for Chrome](https://chromewebstore.google.com/detail/jkpdfjipibgfpeehjgmcjpahmpfipkfl) を追加します。
+
+Chrome で拡張機能を追加したあとは、ツールバーのパズルのアイコンからピン留めしておくと、
+次の手順でアイコンを見つけやすくなります。
+
 ## 2. 使いたいサイトで有効にする
 
 拡張機能は、**既定ではどのサイトでも動きません**。
 あなたが許可したサイトでだけページを読みます。
 
 1. 共有フォルダのパスが書かれた社内ページを開く
-2. ツールバーの「Parallel-Bridge for Edge」アイコンをクリック
+2. ツールバーの「Parallel-Bridge for Edge」(Chrome では「Parallel-Bridge for Chrome」) アイコンをクリック
 3. **「このサイトで有効にする」** を押す
-4. Edge が「このサイトへのアクセスを許可しますか」と聞くので許可する
+4. ブラウザーが「このサイトへのアクセスを許可しますか」と聞くので許可する
 
 <figure class="shot">
   <img src="{{ '/assets/img/guide/ja/popup-enable.png' | relative_url }}" alt="ツールバーのアイコンから「このサイトで有効にする」を押す画面" loading="lazy">
@@ -67,7 +75,7 @@ Edge アドオンストアから [Parallel-Bridge for Edge](https://microsoftedg
 
 リンクをクリックすると、次の順で進みます。
 
-1. **Edge の確認** — 「Parallel-Bridge-LocalLink を開きますか？」という Windows / Edge の確認が出ます。
+1. **ブラウザーの確認** — 「Parallel-Bridge-LocalLink を開きますか？」という Edge / Chrome の確認が出ます。
    「常に許可」はサイト単位で効きます（別のサイトでは改めて確認が出ます）。
 2. **Parallel-Bridge-LocalLink の確認** — 開こうとしている**パスの全文**と、
    リンクが名乗っている送信元が表示されます。内容を確かめて「開く」を押してください。
@@ -138,7 +146,7 @@ Edge アドオンストアから [Parallel-Bridge for Edge](https://microsoftedg
 
 - Windows アプリがインストールされているか確認してください
   (スタートメニューに Parallel-Bridge-LocalLink があるかどうかで分かります)。
-- Edge の確認ダイアログを以前「ブロック」してしまった可能性があります。
+- ブラウザーの確認ダイアログを以前「ブロック」してしまった可能性があります。
   アドレスバー左のアイコンからサイトの権限を見直してください。
 
 ### そのページのパスがリンクにならない
@@ -170,7 +178,7 @@ VPN にこれから接続する場合や、オフラインで使えるファイ�
 
 ### 毎回ブラウザの確認ダイアログが出る
 
-Edge の仕様です。「常に許可」は**サイト単位**で効くので、
+Edge / Chrome の仕様です。「常に許可」は**サイト単位**で効くので、
 別のサイトからクリックすると改めて確認が出ます。
 
 ## お問い合わせ

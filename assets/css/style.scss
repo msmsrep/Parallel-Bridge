@@ -186,6 +186,20 @@ $hr-border-color:           $pb-teal-border;
   font-weight: 700;
 }
 
+// 拡張は Edge 版と Chrome 版のどちらか一方を入れる。「または」でつないで 1 組に見せる
+.store-choice {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.store-or {
+  color: rgba(#FFFFFF, 0.85);
+  font-size: 0.9rem;
+}
+
 .store-note {
   margin: 0.9rem 0 0;
   color: rgba(#FFFFFF, 0.8);
@@ -196,6 +210,10 @@ $hr-border-color:           $pb-teal-border;
   .store-btn {
     width: 100%;
     min-width: 0;
+  }
+
+  .store-choice {
+    width: 100%;
   }
 }
 

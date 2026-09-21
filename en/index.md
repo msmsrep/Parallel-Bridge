@@ -24,14 +24,15 @@ Your intranet wiki says `\fileserver\share\report.xlsx`, but your browser refuse
 | Item | Requirement |
 |---|---|
 | OS | Windows 10 version 2004 or later, or Windows 11 (64-bit) |
-| Browser | Microsoft Edge |
-| Parts | Both the Windows app **Parallel-Bridge-LocalLink** and the Edge extension **Parallel-Bridge for Edge** |
+| Browser | Microsoft Edge or Google Chrome |
+| Parts | The Windows app **Parallel-Bridge-LocalLink** and the extension for your browser (**Parallel-Bridge for Edge** for Edge, **Parallel-Bridge for Chrome** for Chrome) |
 
 The app alone can open `pbridge://` links, but you need the extension to use it on ordinary intranet pages.
 
 ## 1. Install
 
-Install both, using the buttons at the top of the page or the links below.
+Install the app and the extension, using the buttons at the top of the page or the links below.
+Pick the extension that matches your browser (both are the same extension).
 
 ### Windows app
 
@@ -43,15 +44,21 @@ Windows then associates `pbridge://` links with the app. No extra setup is neede
 
 Add [Parallel-Bridge for Edge](https://microsoftedge.microsoft.com/addons/detail/parallelbridge-for-edge/dmidfkmnkkedmhecpoamhlfmdjacciob) from the Edge Add-ons store.
 
+### Chrome extension
+
+Add [Parallel-Bridge for Chrome](https://chromewebstore.google.com/detail/jkpdfjipibgfpeehjgmcjpahmpfipkfl) from the Chrome Web Store.
+
+In Chrome, pin the extension from the puzzle-piece icon on the toolbar so it is easy to find in the next step.
+
 ## 2. Enable it on the sites you use
 
 The extension is **disabled on every site by default**.
 It reads page content only on sites you have enabled.
 
 1. Open an intranet page that contains share paths
-2. Click the "Parallel-Bridge for Edge" toolbar icon
+2. Click the "Parallel-Bridge for Edge" toolbar icon ("Parallel-Bridge for Chrome" in Chrome)
 3. Choose **"Enable on this site"**
-4. Grant the site access when Edge asks
+4. Grant the site access when the browser asks
 
 <figure class="shot">
   <img src="{{ '/assets/img/guide/en/popup-enable.png' | relative_url }}" alt="Choosing "Enable on this site" from the toolbar icon" loading="lazy">
@@ -62,7 +69,7 @@ To stop, choose "Disable on this site" from the same icon.
 
 ## 3. Click a link
 
-1. **Edge asks first** — Windows/Edge shows a confirmation for opening Parallel-Bridge-LocalLink.
+1. **The browser asks first** — Edge/Chrome shows a confirmation for opening Parallel-Bridge-LocalLink.
    "Always allow" applies **per site**, so other sites will ask again.
 2. **Parallel-Bridge-LocalLink asks next** — it shows the **full path** it is about to open and the
    origin the link claims to come from. Check it, then press "Open".
@@ -132,7 +139,7 @@ Launch Parallel-Bridge-LocalLink from the Start menu to open its settings window
 ### Nothing happens when I click a link
 
 - Check that the Windows app is installed (look for Parallel-Bridge-LocalLink in the Start menu).
-- You may have blocked the Edge confirmation earlier. Review the site's permissions
+- You may have blocked the browser confirmation earlier. Review the site's permissions
   from the icon at the left of the address bar.
 
 ### Paths on the page don't become links
@@ -163,7 +170,7 @@ The folder that contains them is shown instead.
 
 ### The browser confirmation appears every time
 
-That is how Edge behaves. "Always allow" applies **per site**, so a different site asks again.
+That is how Edge and Chrome behave. "Always allow" applies **per site**, so a different site asks again.
 
 ## Contact
 
