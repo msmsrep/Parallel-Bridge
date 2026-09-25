@@ -114,6 +114,11 @@ Toolbar icon → "Open options".
 | When you click a link | See the table above |
 | Mark converted links | Makes converted links easy to spot |
 
+<figure class="shot">
+  <img src="{{ '/assets/img/guide/en/auto-link.png' | relative_url }}" alt="The same page with “Also link paths in page text” off and on: plain paths in the text become links only when it is on" loading="lazy">
+  <figcaption>With “Also link paths in page text” on, paths written in the text become links too</figcaption>
+</figure>
+
 ### App settings
 
 Launch Parallel-Bridge-LocalLink from the Start menu to open its settings window.

@@ -120,6 +120,11 @@ Chrome で拡張機能を追加したあとは、ツールバーのパズルの�
 | クリックしたときの動作 | 上の表のとおり |
 | 変換したリンクに印を付ける | 変換済みのリンクが見分けられるようになります |
 
+<figure class="shot">
+  <img src="{{ '/assets/img/guide/ja/auto-link.png' | relative_url }}" alt="「本文中のパスもリンクにする」のオフとオンで、文章中のパスがリンクになるかどうかを比べた画面" loading="lazy">
+  <figcaption>「本文中のパスもリンクにする」をオンにすると、文章中に書かれたパスもリンクになります</figcaption>
+</figure>
+
 ### アプリの設定
 
 スタートメニューから Parallel-Bridge-LocalLink を起動すると設定画面が開きます。
