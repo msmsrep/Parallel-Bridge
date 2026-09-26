@@ -177,6 +177,14 @@ The folder that contains them is shown instead.
 
 That is how Edge and Chrome behave. "Always allow" applies **per site**, so a different site asks again.
 
+## Support development
+
+Parallel-Bridge is free. If you find it useful, please consider supporting its development.
+Support is optional and doesn't change which features you can use.
+
+- [GitHub Sponsors](https://github.com/sponsors/msmsrep)
+- [Ko-fi](https://ko-fi.com/msmsrep)
+
 ## Contact
 
 <small>Bugs and requests: [GitHub Issues](https://github.com/msmsrep/Parallel-Bridge/issues).</small>

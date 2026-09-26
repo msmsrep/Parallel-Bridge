@@ -186,6 +186,14 @@ VPN にこれから接続する場合や、オフラインで使えるファイ�
 Edge / Chrome の仕様です。「常に許可」は**サイト単位**で効くので、
 別のサイトからクリックすると改めて確認が出ます。
 
+## 開発を支援する
+
+Parallel-Bridge は無料で使えます。気に入っていただけたら、開発の支援をお願いします。
+支援は任意で、使える機能は変わりません。
+
+- [GitHub Sponsors](https://github.com/sponsors/msmsrep)
+- [Ko-fi](https://ko-fi.com/msmsrep)
+
 ## お問い合わせ
 
 <small>不具合の報告や要望は [GitHub の Issues](https://github.com/msmsrep/Parallel-Bridge/issues) まで。</small>
