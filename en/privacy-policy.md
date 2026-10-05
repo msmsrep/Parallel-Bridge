@@ -1,7 +1,12 @@
 ---
 title: Privacy Policy
-description: Privacy policy for Parallel-Bridge-LocalLink
+tagline: Privacy policy for Parallel-Bridge-LocalLink
+description: Privacy policy for Parallel-Bridge-LocalLink (Windows app) and Parallel-Bridge for Edge / Chrome (extensions). No personal data or browsing history is collected or sent; everything stays on your network.
 lang: en
+locale: en_US
+permalink: /en/privacy-policy
+alternate: /privacy-policy
+image: /assets/img/og-en.png
 ---
 
 [日本語]({{ '/privacy-policy' | relative_url }}) · [User Guide]({{ '/en/' | relative_url }})
@@ -12,7 +17,7 @@ Last updated: 2026-09-21
 
 ## Summary
 
-Parallel-Bridge-LocalLink opens file-share paths (UNC paths of the form `\server\share\...`) written on
+Parallel-Bridge-LocalLink opens file-share paths (UNC paths of the form `\\server\share\...`) written on
 pages on your local network in File Explorer with a single click.
 
 **Parallel-Bridge-LocalLink does not send your information to the developer or to any third party.**

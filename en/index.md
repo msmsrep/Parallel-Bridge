@@ -1,13 +1,18 @@
 ---
 title: Parallel-Bridge-LocalLink User Guide
-description: Open file-share paths written on intranet pages in File Explorer with one click
+seo_title: Open UNC paths and file:// links from Edge / Chrome in File Explorer
+tagline: Open file-share paths written on intranet pages in File Explorer with one click
+description: Edge and Chrome block links to file shares (UNC paths and file:// links) on intranet pages. This free Windows app and browser extension opens them in File Explorer with one click. Everything stays on your network, with no logs or analytics.
 lang: en
+locale: en_US
+alternate: /
+image: /assets/img/og-en.png
 store_links: true
 ---
 
 [日本語]({{ '/' | relative_url }}) · [Privacy Policy]({{ '/en/privacy-policy' | relative_url }})
 
-Your intranet wiki says `\fileserver\share\report.xlsx`, but your browser refuses to open it.
+Your intranet wiki says `\\fileserver\share\report.xlsx`, but your browser refuses to open it.
 **Parallel-Bridge-LocalLink** makes those paths clickable: one click opens them in File Explorer.
 
 <figure class="shot">
@@ -80,7 +85,7 @@ To stop, choose "Disable on this site" from the same icon.
   <figcaption>The Parallel-Bridge-LocalLink confirmation</figcaption>
 </figure>
 
-If you will use the same share (`\server\share`) often, press **"Always allow this share"**
+If you will use the same share (`\\server\share`) often, press **"Always allow this share"**
 in the confirmation dialog to skip it next time.
 
 ### Click modifiers
@@ -110,7 +115,7 @@ Toolbar icon → "Open options".
 | Setting | What it does |
 |---|---|
 | Enabled sites | The sites you allowed. You can revoke them here |
-| Also link paths in page text | Turns plain `\server\share` text into links too (off by default). Paths with spaces are recognized when wrapped in quotes or 「」 |
+| Also link paths in page text | Turns plain `\\server\share` text into links too (off by default). Paths with spaces are recognized when wrapped in quotes or 「」 |
 | When you click a link | See the table above |
 | Mark converted links | Makes converted links easy to spot |
 

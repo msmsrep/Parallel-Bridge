@@ -2,7 +2,9 @@
 <html lang="{{ page.lang | default: site.lang | default: "ja" }}">
   <head>
     <meta charset="UTF-8">
-{% seo %}
+    {% comment %} 検索結果の見出しは製品名より「何ができるか」を優先する (seo_title)。og:title は page.title のまま {% endcomment %}
+    <title>{{ page.seo_title | default: page.title | default: site.title }}{% if page.title != site.title %} | {{ site.title }}{% endif %}</title>
+{% seo title=false %}
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,7 +18,7 @@
 
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title }}</h1>
-      <h2 class="project-tagline">{{ page.description | default: site.description }}</h2>
+      <h2 class="project-tagline">{{ page.tagline | default: page.description | default: site.description }}</h2>
 
       {% if page.store_links %}
       {% comment %} 入手先はヘッダーで一番目立たせる。アプリと拡張の両方が要る。拡張は Edge 版と Chrome 版のどちらか一方 {% endcomment %}

@@ -1,7 +1,12 @@
 ---
 title: プライバシーポリシー
-description: Parallel-Bridge-LocalLink のプライバシーポリシー
+tagline: Parallel-Bridge-LocalLink のプライバシーポリシー
+description: Parallel-Bridge-LocalLink (Windows アプリ) と Parallel-Bridge for Edge / Chrome (拡張機能) のプライバシーポリシー。個人情報や閲覧履歴を収集・送信せず、通信は社内ネットワークで完結します。
 lang: ja
+locale: ja_JP
+permalink: /privacy-policy
+alternate: /en/privacy-policy
+image: /assets/img/og-ja.png
 ---
 
 [English]({{ '/en/privacy-policy' | relative_url }}) ・ [ユーザーガイド]({{ '/' | relative_url }})

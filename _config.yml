@@ -1,9 +1,21 @@
-title: Parallel-Bridge
+title: Parallel-Bridge-LocalLink
 description: 社内サイトに書かれた共有フォルダのパスを、クリックひとつでエクスプローラーに開く
 theme: jekyll-theme-cayman
 baseurl: /Parallel-Bridge
 url: https://msmsrep.github.io
 lang: ja
+locale: ja_JP
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+author: msmsrep
+
+# Search Console / Bing Webmaster Tools の所有確認。発行されたコードを入れると <meta> が出る
+# webmaster_verifications:
+#   google: <Search Console の HTML タグの content 値>
+#   bing: <Bing Webmaster Tools の content 値>
 
 # 公開するのはユーザー向けガイドとプライバシーポリシーだけ
 exclude:

@@ -3,3 +3,36 @@
 <link rel="apple-touch-icon" sizes="128x128" href="{{ '/assets/img/icon-128.png' | relative_url }}">
 <link rel="shortcut icon" href="{{ '/assets/favicon.ico' | relative_url }}">
 <meta name="theme-color" content="#147A6C">
+{% comment %} 日英の対になるページ。front matter の alternate に相手の URL を書く。x-default は英語版 {% endcomment %}
+{% if page.alternate %}
+{% if page.lang == "en" %}{% assign url_en = page.url %}{% assign url_ja = page.alternate %}{% else %}{% assign url_ja = page.url %}{% assign url_en = page.alternate %}{% endif %}
+<link rel="alternate" hreflang="ja" href="{{ url_ja | absolute_url }}">
+<link rel="alternate" hreflang="en" href="{{ url_en | absolute_url }}">
+<link rel="alternate" hreflang="x-default" href="{{ url_en | absolute_url }}">
+{% endif %}
+{% if page.store_links %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Parallel-Bridge-LocalLink",
+  "description": {{ page.description | jsonify }},
+  "url": {{ page.url | absolute_url | jsonify }},
+  "image": {{ page.image | absolute_url | jsonify }},
+  "inLanguage": {{ page.lang | jsonify }},
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Windows 10 (2004+), Windows 11",
+  "softwareRequirements": "Microsoft Edge / Google Chrome",
+  "downloadUrl": "https://apps.microsoft.com/detail/9MZS24SFBKR9",
+  "installUrl": "https://apps.microsoft.com/detail/9MZS24SFBKR9",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "{% if page.lang == "en" %}USD{% else %}JPY{% endif %}" },
+  "author": { "@type": "Person", "name": "msmsrep", "url": "https://github.com/msmsrep" },
+  "sameAs": [
+    "https://apps.microsoft.com/detail/9MZS24SFBKR9",
+    "https://microsoftedge.microsoft.com/addons/detail/parallelbridge-for-edge/dmidfkmnkkedmhecpoamhlfmdjacciob",
+    "https://chromewebstore.google.com/detail/jkpdfjipibgfpeehjgmcjpahmpfipkfl",
+    "https://github.com/msmsrep/Parallel-Bridge"
+  ]
+}
+</script>
+{% endif %}
