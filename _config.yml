@@ -13,8 +13,8 @@ plugins:
 author: msmsrep
 
 # Search Console / Bing Webmaster Tools の所有確認。発行されたコードを入れると <meta> が出る
-# webmaster_verifications:
-#   google: <Search Console の HTML タグの content 値>
+webmaster_verifications:
+  google: xxCVbDv8etzU4YO22Wzsz6xP0OS7Y5sOulTJRJW7Ej0
 #   bing: <Bing Webmaster Tools の content 値>
 
 # 公開するのはユーザー向けガイドとプライバシーポリシーだけ
